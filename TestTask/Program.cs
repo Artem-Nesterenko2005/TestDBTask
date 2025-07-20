@@ -62,9 +62,9 @@ class Program
             case "5":
                 try
                 {
-                    var a = DataBaseInfo.GetMaleFiltered();
-                    DataBaseInfo.PrintSortedEmployeesInfo(DataBaseInfo.GetMaleFiltered().Item2);
-                    Console.WriteLine($"Time execution - {a.Item1}");
+                    var findInfo = DataBaseInfo.GetMaleFiltered();
+                    DataBaseInfo.PrintSortedEmployeesInfo(findInfo.Item2);
+                    Console.WriteLine($"Time execution - {findInfo.Item1}");
                     Console.WriteLine("Operation completed");
                 }
                 catch (Exception ex)
